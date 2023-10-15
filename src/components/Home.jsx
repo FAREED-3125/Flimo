@@ -118,7 +118,7 @@ const HomeSlides = () => {
                     {movies?.overview}
                   </div>
                   <div>
-                    <div className="flex items-center justify-center gap-2 ring-1 rounded-full px-2 ">
+                    <div className="flex items-center justify-center gap-2 md:mt-5 ring-1 rounded-full px-2 ">
                       <div className="text-[15px] border-r-[1px] border-blue-300 pr-2">
                         <FaMicrophoneAlt />
                       </div>
