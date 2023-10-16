@@ -77,6 +77,7 @@ const HomeSlides = () => {
       window.removeEventListener("resize", detectWidth);
     };
   });
+  console.log(movieArr2);
 
   return (
     <div className="home-slider md:relative md:top-[-13px] w-full min-h-[240px]  flex items-center justify-start ">
@@ -105,6 +106,8 @@ const HomeSlides = () => {
                 src={`${imageUrl(movies?.backdrop_path)}`}
                 className="overflow-hidden rounded-lg"
                 alt=""
+                loading="lazy"
+                decoding="async"
               />
               <div className=" flex flex-col items-start justify-end md:justify-center font-[900] text-[16px] text-center mt-2 bg-gradient-to-t from-black to-transparent to-[50%] absolute bottom-[40px] md:bottom-0 w-full md:to-[120%] h-full rounded-lg">
                 <div className="w-[80%] lg:w-[60%] h-max ml-5 flex items-start justify-start  flex-col mb-5">
